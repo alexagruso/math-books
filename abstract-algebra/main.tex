@@ -1,0 +1,39 @@
+\documentclass[12pt]{book}
+
+% standard packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% styles
+\usepackage{fancyhdr}
+\usepackage[Sonny]{fncychap}
+\usepackage[headheight=1in, margin=1in]{geometry}
+
+% font business
+% \usepackage[default]{droidsans}
+% \usepackage[T1]{fontenc}
+
+\newcommand{\braces}[1]{\left\{ \, #1 \, \right\}}
+
+\begin{document}
+
+    \pagenumbering{gobble}
+
+    \title{Abstract Algebra}
+    \author{Alexander Agruso}
+    \date{}
+
+    \maketitle
+
+    \pagenumbering{roman}
+    \pagestyle{fancy}
+
+    \include{./preface/preface}
+
+    \pagenumbering{arabic}
+
+    \setcounter{chapter}{-1} % start at chapter 0
+
+    \include{./chapter0/chapter0}
+
+\end{document}
